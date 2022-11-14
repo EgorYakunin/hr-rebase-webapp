@@ -32,7 +32,6 @@ function Header(props: props) {
                         <Link href="/">
                             <Row>
                                 <Image
-                                    className="logo__img"
                                     src={logo}
                                     alt="logo"
                                 />
