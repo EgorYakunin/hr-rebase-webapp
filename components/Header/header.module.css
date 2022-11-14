@@ -13,7 +13,7 @@
     height: 5rem;
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: #fff;
 }
 
 @media(min-width: 800px) {

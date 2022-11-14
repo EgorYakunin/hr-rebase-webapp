@@ -11,9 +11,6 @@ export default function toggle_menu(default_value: boolean): toggle {
 
     function handle_click(): void {
         flip((prev: boolean) => !prev);
-        is_open
-            ? console.log('[Mobile Menu]: closed')
-            : console.log('[Mobile Menu]: opened');
     }
 
     return {

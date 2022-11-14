@@ -2,8 +2,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import logo from '@/assets/svg/logo.svg';
-import menu_icon from '../../assets/svg/menu.svg';
+import logo from './logo.svg';
+import menu_icon from './menu.svg';
 
 import Container from '@/components/std/Container';
 import Row from '@/components/std/Row';
@@ -29,7 +29,7 @@ function Header(props: props) {
             <header className={styles.header}>
                 <Container>
                     <Row>
-                        <Link className="header__logo logo" href="/">
+                        <Link href="/">
                             <Row>
                                 <Image
                                     className="logo__img"
@@ -37,7 +37,7 @@ function Header(props: props) {
                                     alt="logo"
                                 />
                                 <Spacer left="1" />
-                                <h3 className="logo__title --ld">HR company</h3>
+                                <h3 className="--ld">HR company</h3>
                             </Row>
                         </Link>
                         <Navigation />

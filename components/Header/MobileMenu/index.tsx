@@ -1,4 +1,7 @@
+import styles from './mobile_menu.module.css';
 import Link from 'next/link';
+import Button from '@/components/std/Button';
+import Spacer from '@/components/std/Spacer';
 
 type props = {
     show_login_button?: boolean;
@@ -6,18 +9,21 @@ type props = {
 
 export default function ModibleMenu(props: props) {
     return (
-        <section className="mobile-menu">
-            <Link href="/find-job">
-                <p className="nav__link">Найти работу</p>
+        <section className={styles.menu}>
+            <Link href="/">
+                <p>Найти работу</p>
             </Link>
-            <Link href="/find-workers">
-                <p className="nav__link --middle-link">Найти сотрудников</p>
+            <Spacer top="2" />
+            <Link href="/">
+                <p>Найти сотрудников</p>
             </Link>
+            <Spacer top="2" />
             {!props.show_login_button && (
-                <Link href="/login">
-                    <button className="nav__button --primary-btn">Войти</button>
+                <Link href="/">
+                    <Button>Войти</Button>
                 </Link>
             )}
+            <Spacer top="2" />
         </section>
     );
 }
