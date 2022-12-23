@@ -7,5 +7,5 @@ export default function Spacer(props) {
         marginLeft: left ? `${left}rem` : '0rem',
     };
 
-    return <span style={style}>{children}</span>;
+    return <div style={style}>{children}</div>;
 }

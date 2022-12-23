@@ -3,10 +3,6 @@
     flex-direction: column;
 }
 
-.clmn {
-    width: 100%;
-}
-
 .link {
     color: var(--accent, blue);
 }

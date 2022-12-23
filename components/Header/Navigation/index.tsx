@@ -20,10 +20,12 @@ export default function Navigation(props: props) {
                     <p>Найти сотрудников</p>
                 </Link>
                 {!props.hide_button && (
-                    <Link href="/">
+                    <>
                         <Spacer left="4" />
-                        <Button>Войти</Button>
-                    </Link>
+                        <Link href="/">
+                            <Button>Войти</Button>
+                        </Link>
+                    </>
                 )}
             </Row>
         </nav>
