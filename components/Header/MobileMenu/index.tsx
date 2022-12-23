@@ -10,7 +10,7 @@ type props = {
 export default function ModibleMenu(props: props) {
     return (
         <section className={styles.menu}>
-            <Link href="/">
+            <Link href="/faq">
                 <p>Найти работу</p>
             </Link>
             <Spacer top="2" />
@@ -19,7 +19,7 @@ export default function ModibleMenu(props: props) {
             </Link>
             <Spacer top="2" />
             {!props.show_login_button && (
-                <Link href="/">
+                <Link href="/login">
                     <Button>Войти</Button>
                 </Link>
             )}

@@ -12,7 +12,7 @@ export default function Navigation(props: props) {
     return (
         <nav className={styles.nav}>
             <Row>
-                <Link href="/">
+                <Link href="/faq">
                     <p>Найти работу</p>
                 </Link>
                 <Spacer left="3" />
