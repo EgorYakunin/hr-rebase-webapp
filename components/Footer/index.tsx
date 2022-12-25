@@ -1,0 +1,37 @@
+import Link from "next/link";
+import Container from "@/components/std/Container";
+import Row from "@/components/std/Row";
+
+import styles from "./footer.module.css";
+
+export default function Footer() {
+    return (
+        <footer className={styles.footer}>
+            <Container>
+                <Row className={styles.content}>
+                    <h3>Hr company</h3>
+                    <div className={styles.grid}>
+                        <Link href="/" className={styles.link}>
+                            Частые вопросы
+                        </Link>
+                        <Link href="/" className={styles.link}>
+                            Обратная связь
+                        </Link>
+                        <Link href="/" className={styles.link}>
+                            Пользовательское соглашение
+                        </Link>
+                        <Link href="/" className={styles.link}>
+                            Партнеры
+                        </Link>
+                        <Link href="/" className={styles.link}>
+                            link 1
+                        </Link>
+                        <Link href="/" className={styles.link}>
+                            link 1
+                        </Link>
+                    </div>
+                </Row>
+            </Container>
+        </footer>
+    );
+}

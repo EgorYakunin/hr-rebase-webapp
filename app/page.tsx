@@ -2,7 +2,7 @@ import Container from '@/components/std/Container';
 
 export default function Home() {
     return (
-        <Container>
+        <Container wrapper>
             <h1>Hi mom!</h1>
         </Container>
     );
