@@ -1,23 +1,26 @@
-import styles from './button.module.css';
+import styles from "./button.module.css";
 
 type props = {
-    children: React.ReactNode,
-    onClick: Function,
-    secondary?: boolean,
-    expand?: boolean,
-}
+    children: React.ReactNode;
+    onClick?: () => void;
+    secondary?: boolean;
+    expand?: boolean;
+};
 
 export default function Button(props: props) {
-
-    let button_styles = styles.primary
+    let button_styles = styles.primary;
 
     if (props.secondary) {
-        button_styles = styles.secondary
+        button_styles = styles.secondary;
     }
 
     if (props.expand) {
-        button_styles += " " + styles.expand
+        button_styles += " " + styles.expand;
     }
 
-    return <button className={button_styles} onClick={props.onClick}>{props.children}</button>;
+    return (
+        <button className={button_styles} onClick={props.onClick}>
+            {props.children}
+        </button>
+    );
 }
