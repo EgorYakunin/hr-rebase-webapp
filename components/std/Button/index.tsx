@@ -1,5 +1,23 @@
 import styles from './button.module.css';
 
-export default function Button({ children }: { children: React.ReactNode }) {
-    return <button className={styles.primary}>{children}</button>;
+type props = {
+    children: React.ReactNode,
+    onClick: () => void,
+    secondary?: boolean,
+    expand?: boolean,
+}
+
+export default function Button(props: props) {
+
+    let button_styles = styles.primary
+
+    if (props.secondary) {
+        button_styles = styles.secondary
+    }
+
+    if (props.expand) {
+        button_styles += " " + styles.expand
+    }
+
+    return <button className={button_styles}>{props.children}</button>;
 }

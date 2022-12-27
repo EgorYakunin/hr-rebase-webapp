@@ -15,7 +15,7 @@
     background: rgb(22, 73, 150);
 }
 
-.--secondary-btn {
+.secondary {
     background: transparent;
     color: var(--accent);
 
@@ -29,21 +29,21 @@
     text-align: center;
 }
 
-.--red-btn {
+.red {
     border-color: red;
     color: red;
 }
 
-.--secondary-btn:hover {
+.secondary:hover {
     background-color: var(--background-main);
 }
 
-.--red-btn:hover {
+.red:hover {
     background-color: red;
     color: white;
 }
 
-.--floating-btn {
+.floating {
     padding: 1rem;
     border-radius: 50%;
     background-color: #fff;
@@ -52,18 +52,22 @@
     align-items: center;
 }
 
-.--floating-btn img {
+.floating img {
     height: 1.3rem;
 }
 
-.--floating-btn:hover {
+.floating:hover {
     background-color: #f2f2f2;
 }
 
-.--save-btn {
+.save-btn {
     position: fixed;
     z-index: 4;
     bottom: 10%;
     right: 10%;
     cursor: pointer;
+}
+
+.expand {
+    width: 100%;
 }

@@ -25,7 +25,7 @@ export default function FaqPage() {
     ));
 
     return (
-        <Container>
+        <Container wrapper>
             <main className={styles.main}>
                 <Column>
                     <Card>
