@@ -2,15 +2,12 @@ import Container from "@/components/std/Container";
 import Spacer from "@/components/std/Spacer";
 import Card from "@/components/Card";
 import Column from "@/components/std/Column";
-import Button from "@/components/std/Button";
 import FaqAccordion from "@/components/FaqAccordion";
-import Row from "@/components/std/Row";
-import Input from "@/components/std/Inputs/Input";
+import FeedbackForm from "./FeedbackForm";
 
 import data from "./dummy";
 import Link from "next/link";
 import styles from "./contact.module.css";
-
 
 export default function ContactPage() {
     const first_section_qa = data.first.map(el => (
@@ -58,19 +55,7 @@ export default function ContactPage() {
                 </Column>
 
                 <Card>
-                    <form>
-                        <Spacer top="1" />
-                        <Input name="test" label="Ваш e-mail для ответа" type="email"/>
-                        <Spacer top="1" />
-                        <h3>Ваше сообщение</h3>
-                        {/**textarea */}
-                        <Spacer top="2" />
-
-                        <Row>
-                            <div></div>
-                            <Button onClick={() => {}}>Отправить</Button>
-                        </Row>
-                    </form>
+                    <FeedbackForm/>
                 </Card>
             </main>
         </Container>

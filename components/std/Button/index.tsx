@@ -2,7 +2,7 @@ import styles from './button.module.css';
 
 type props = {
     children: React.ReactNode,
-    onClick: () => void,
+    onClick: Function,
     secondary?: boolean,
     expand?: boolean,
 }
@@ -19,5 +19,5 @@ export default function Button(props: props) {
         button_styles += " " + styles.expand
     }
 
-    return <button className={button_styles}>{props.children}</button>;
+    return <button className={button_styles} onClick={props.onClick}>{props.children}</button>;
 }
