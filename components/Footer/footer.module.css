@@ -7,10 +7,10 @@
 
 .grid {
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-columns: 2fr 2fr;
     grid-template-rows: 2fr 2fr;
     gap: 3em;
-    width: 60%;
+    width: 50%;
 }
 
 .link {

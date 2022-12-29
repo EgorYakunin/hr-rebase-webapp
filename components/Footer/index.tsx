@@ -11,23 +11,17 @@ export default function Footer() {
                 <Row className={styles.content}>
                     <h3>Hr company</h3>
                     <div className={styles.grid}>
-                        <Link href="/" className={styles.link}>
+                        <Link href="/faq" className={styles.link}>
                             Частые вопросы
                         </Link>
-                        <Link href="/" className={styles.link}>
+                        <Link href="/contact" className={styles.link}>
                             Обратная связь
                         </Link>
-                        <Link href="/" className={styles.link}>
+                        <Link href="/terms-of-use" className={styles.link}>
                             Пользовательское соглашение
                         </Link>
-                        <Link href="/" className={styles.link}>
+                        <Link href="/loyalty" className={styles.link}>
                             Партнеры
-                        </Link>
-                        <Link href="/" className={styles.link}>
-                            link 1
-                        </Link>
-                        <Link href="/" className={styles.link}>
-                            link 1
                         </Link>
                     </div>
                 </Row>

@@ -1,3 +1,6 @@
+# All links
+After page transition via @next/link header is not displayed
+
 # Header
 1.  <MobileMenu/> doesn't close when u click a <Link/>
 
