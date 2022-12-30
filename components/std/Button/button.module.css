@@ -1,5 +1,6 @@
 .primary {
     background: var(--accent);
+    border: 2px solid var(--accent);
     color: white;
 
     padding: 0.7em 3.2em;

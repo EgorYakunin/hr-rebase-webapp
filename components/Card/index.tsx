@@ -1,5 +1,14 @@
-import styles from './card.module.css';
+import styles from "./card.module.css";
 
-export default function Card({ children }: { children: React.ReactNode }) {
-    return <div className={styles.card}>{children}</div>;
+type props = {
+    children: React.ReactNode;
+    className?: string;
+};
+
+export default function Card(props: props) {
+    const card_styles = props.className
+        ? styles.card + " " + props.className
+        : styles.card;
+
+    return <div className={card_styles}>{props.children}</div>;
 }

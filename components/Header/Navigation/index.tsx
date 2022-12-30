@@ -22,7 +22,7 @@ export default function Navigation(props: props) {
                 {!props.hide_button && (
                     <>
                         <Spacer left="4" />
-                        <Link href="/">
+                        <Link href="/login">
                             <Button>Войти</Button>
                         </Link>
                     </>
